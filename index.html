@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Work Day Schedule</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./moment.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+
+    <!-- JumboTron section for the top of the scheduler header -->
+    <div class="container" id="jumboTron">
+
+        <div class="row"> 
+            <div class="col-12">
+                <h1>Work Day Scheduler</h1>
+                <br>
+                <h3>A simple scheduling app for scheduling your work day</h3>
+                <br>
+                <!-- current date pulled from moment.js and script.js -->
+                <h4 id="CurrentDate"></h4> 
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="bottomborder"></div>
+
+    <div class="container" id="bottomContainer">
+<!-- Start of Day Planner here -->
+        <div class="row"> 
+            <div class="col-1 p-0"></div> <!--  Margin to the left of the timeslot -->
+
+            <!-- Time -->
+            <div class="col-1 p-0">
+                <div class="border border-dark border-left-0 time">9 am</div>
+                <div class="border border-dark border-left-0 time">10 am</div>
+                <div class="border border-dark border-left-0 time">11 am</div>
+                <div class="border border-dark border-left-0 time">12 pm</div>
+                <div class="border border-dark border-left-0 time">1 pm</div>
+                <div class="border border-dark border-left-0 time">2 pm</div>
+                <div class="border border-dark border-left-0 time">3 pm</div>
+                <div class="border border-dark border-left-0 time">4 pm</div>
+                <div class="border border-dark border-left-0 time">5 pm</div>
+
+
+            </div>
+
+            <!-- User instert text here -->
+            <div class="col-8 p-0">
+                <div class="form-group">
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" id="nineamtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" id="tenamtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" id="elevenamtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" id="twelvepmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" id="onepmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" id="twopmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" id="threepmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" id="fourpmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" id="fivepmtextarea"></textarea>
+                </div>
+
+            </div>
+
+            <!-- Lock/Save Buttons  -->
+            <div class="col-1 p-0">
+                <button type="button" class="btn btn-info rounded-right" id="9amsavebtn"><i class="fas fa-lock"></i></button>
+                <button type="button" class="btn btn-info rounded-right" id="10amsavebtn"><i class="fas fa-lock"></i></button>
+                <button type="button" class="btn btn-info rounded-right" id="11amsavebtn"><i class="fas fa-lock"></i></button>
+                <button type="button" class="btn btn-info rounded-right" id="12pmsavebtn"><i class="fas fa-lock"></i></button>
+                <button type="button" class="btn btn-info rounded-right" id="1pmsavebtn"><i class="fas fa-lock"></i></button>
+                <button type="button" class="btn btn-info rounded-right" id="2pmsavebtn"><i class="fas fa-lock"></i></button>
+                <button type="button" class="btn btn-info rounded-right" id="3pmsavebtn"><i class="fas fa-lock"></i></button>
+                <button type="button" class="btn btn-info rounded-right" id="4pmsavebtn"><i class="fas fa-lock"></i></button>
+                <button type="button" class="btn btn-info rounded-right" id="5pmsavebtn"><i class="fas fa-lock"></i></button>
+
+            </div>
+            <div class="col-2"></div> <!-- Open Margin -->
+        </div>
+    </div>  
+</body>
+</html>
